@@ -1,0 +1,113 @@
+             /*Contact form*/
+             .h2-CF{
+              position: relative;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              margin-top: 100px;
+            
+            }
+            
+            .form-label{
+             color: #7f2d55e9;
+             font-family: $text-font;
+             font-size: $font-size;
+            }
+            
+            .p-form{
+              display: flex;
+              justify-content: center;
+              margin: 40px 180px;
+              font-size: 20px;
+              line-height: 30pt;
+            }
+
+
+// Stile globale per il form
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  // Contenitore per gli input
+  .mb-4, .mb-3 {
+    margin-bottom: 1rem;
+  }
+
+  // Etichette dei campi
+  .form-label {
+    display: block;
+    font-weight: bold;
+    color: $primary-color;
+    margin-bottom: 5px;
+  }
+
+  // Input e textarea
+  .form-control {
+    width: 100%;
+    padding: $padding;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    font-size: $font-size;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 10px 5px rgba(127, 45, 85, 0.5); // Aggiungi un'ombra di focus
+    }
+
+    &::placeholder {
+      color: $primary-color;
+    }
+  }
+}
+
+.github_icon,.apri_icon{
+  display:inline-flex;
+  position:relative;
+  margin-left: 60px;
+  border: none;
+  width: 34px;
+  padding-right:0px;
+ 
+ &:hover{
+  scale: 1.2;
+  opacity: 0.9;
+ }
+}
+
+.apri_icon{
+  margin-left: 20px;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.footer {
+margin-top: 170px;
+  width: 100%;
+  color: $primary-color;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  justify-content: center;
+  & .github_icon_footer, .apri_icon_footer {
+    display:inline-flex;
+    position:relative;
+    margin-left: 15px;
+    border: none;
+    width: 26px;
+    padding-right:0px;
+   
+   &:hover{
+    scale: 1.2;
+    opacity: 0.9;
+   }
+  }
+}
