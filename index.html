@@ -14,9 +14,24 @@
 
   <link rel="stylesheet" href="style.css">
 
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close"/>
 
+  <link rel="icon" href="images/logo.jpg" type="image/x-icon"/>
+
+    <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Il mio portfolio" />
+  <meta property="og:description" content="Scopri il portfolio di Fiamma Fazio, una studentessa appassionata di sviluppo web e full stack development. Esplora i miei progetti e le competenze." />
+  <meta property="og:image" content="images/foto profilo tonda.jpg" />
+  <meta property="og:url" content="https://fiamma-fazio-website.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="robots" content="index, follow">
+
+  <!-- Twitter card meta tags (opzionale) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Il mio portfolio" />
+  <meta name="twitter:description" content="Scopri il portfolio di Fiamma Fazio, una studentessa appassionata di sviluppo web e full stack development. Esplora i miei progetti e le competenze." />
+  <meta name="twitter:image" content="images/foto profilo tonda.jpg" />
   
   <title>Il mio portfolio</title>
   <style>
@@ -66,20 +81,20 @@
 
   <!---About me-->
 
-  <section class="profile container-fluid" id="abaoutme">
+  <section class="profile container-fluid" id="aboutme">
     <div class="section_pic-container my-lg-5">
       <img src="images/foto profilo tonda.jpg" alt="foto di Fiamma Fazio" width="300px">
     </div>
     <div class="section_text">
-      <p class="section_text_p1">Ciao!</p>
-      <p class="section_text_p2">Mi chiamo <strong style="font-size: 34px; font-weight: 400px;">Fiamma</strong></p>
-      <div><p class="section_text_p3 flex-column">sono una studentessa appassionata di sviluppo web e attualmente sto approfondendo le mie competenze come full stack developer. 
+      <p class="section_text_p1 col-12">Ciao!</p>
+      <p class="section_text_p2 col-12 mx-3">Mi chiamo <strong style="font-size: 34px; font-weight: 400px;">Fiamma</strong></p>
+      <div><p class="section_text_p3 flex-column mx-0 ">sono una studentessa appassionata di sviluppo web e attualmente sto approfondendo le mie competenze come full stack developer. 
         <br> Ho una forte curiosità per le tecnologie emergenti e mi piace affrontare sfide che mi permettano di crescere professionalmente e personalmente.</p></div>
   </section>
-<a href="cv.html" target="_blank"><button class="btn-CV rounded-pill col-lg-3 col-md-3 col-12">Download my CV!</button></a>
+<a href="cv.html" target="_blank"><button class="btn-CV rounded-pill col-lg-3 col-md-3 col-10">Download my CV!</button></a>
 
 <!---My skills-->
-<h2 class="h2_myskills my-lg-4 ">Le mie skills</h2>
+<h1 class="h2_myskills my-lg-4 col-12 px-5 mx-4 ">Le mie skills</h2>
   <section class="section-my-skills">
     <div class="content container-fluid col-lg-3 col-md-3 col-12">
       <span style="--i:1;"><img src="images/my_skills/bootstrap.svg"  alt="bootstrap icon" class="bootstrap"><tool-tip inerit role="tooltip" tip-position="top"  > Tooltip text </tool-tip></span>
@@ -96,10 +111,11 @@
   <!-- My projects -->
 
   <section id="projects" class="container-fluid col-lg-10 col-md-10 col-12 col-md-4 mb-4  ">
-    <h2 class="h2_myProjects">I miei progetti</h2>
+    <h1 class="h2_myProjects px-5 mx-4">I miei progetti</h1>
 
-    <div class=" row  justify-content-around">
-      <div class="col-lg-3 col-md-3 col-12 col-md-4 mb-4">
+    <!-- Card 1 -->
+    <div class=" row  justify-content-evenly">
+      <div class="col-lg-4 col-md-4 col-12 col-md-4 col-sm-mb-4 col-sm-mx-5 mb-5 px-5 ">
         <div class="card" style="border-color:#7f2d55e9; border-width: 2px;">
           <img src="images/green_earth_img.jpg" class="card-img-top green-earth" alt="green earth logo" style="height: 18rem;">
           <div class="card-body">
@@ -108,8 +124,8 @@
             <a class="btn btn-outline" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
               Vedi altro
             </a> 
-            <a href='https://github.com/FiammaFazio/Green-Earth.git' target="_blank"><img src="images/github icon.svg" class="github_icon" data-toggle="tooltip" title="Github"></a>
-            <a href='https://greenearth-landingpage.netlify.app/' target="_blank"><img src="images/chevron-double-right.svg" class="apri_icon" data-toggle="tooltip" title="Apri"></a>
+            <a href='https://github.com/FiammaFazio/Green-Earth.git' target="_blank"><img src="images/github icon.svg" class="github_icon mb-0 mx-4" data-toggle="tooltip" title="Github"></a>
+            <a href='https://greenearth-landingpage.netlify.app/' target="_blank"><img src="images/chevron-double-right.svg" class="apri_icon mb-0 mx-0" data-toggle="tooltip" title="Apri"></a>
             <div class="collapse" id="collapseExample1">
               <div class="card card-body">
                 Ho creato una landing page per GreenEarth, una startup che si occupa di progetti a impatto ambientale come riforestazione e pulizia degli oceani, utilizzando solo i linguaggi di html e css.
@@ -120,17 +136,17 @@
       </div>
   
       <!-- Card 2 -->
-      <div class="col-lg-3 col-md-3 col-12 col-md-4 mb-4">
+      <div class="col-lg-4 col-md-4 col-12 col-md-4  col-sm-mb-4 col-sm-mx-5 mb-5 px-5">
         <div class="card" style="border-color:#7f2d55e9; border-width: 2px;">
           <img src="images/hotel_pomelia_img.png" class="card-img-top hotel_pomelia_img" alt="hotel pomelia logo con mare di sfondo" style="height: 18rem;">
           <div class="card-body">
             <h5 class="card-title">Hotel Pomelia</h5>
-            <p class="card-text">Con questo progetto ho avuto l'opportunità di costruire una parte di sito web per un'azienda cliente utilizzando html e css.</p>
+            <p class="card-text">Con questo progetto ho avuto l'opportunità di costruire parte di sito web per un'azienda  utilizzando html e css.</p>
             <a class="btn btn-outline" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
               Vedi altro
             </a>
-            <a href='https://github.com/FiammaFazio/Hotel-Pomelia.git' target="_blank"><img src="images/github icon.svg" class="github_icon" data-toggle="tooltip" title="Github"></a>
-            <a href='https://eco-hotelpomelia.netlify.app/' target="_blank"><img src="images/chevron-double-right.svg" class="apri_icon" data-toggle="tooltip" title="Apri"></a>
+            <a href='https://github.com/FiammaFazio/Hotel-Pomelia.git' target="_blank"><img src="images/github icon.svg" class="github_icon mb-0 mx-4" data-toggle="tooltip" title="Github"></a>
+            <a href='https://eco-hotelpomelia.netlify.app/' target="_blank"><img src="images/chevron-double-right.svg" class="apri_icon mb-0 mx-0" data-toggle="tooltip" title="Apri"></a>
             <div class="collapse" id="collapseExample2">
               <div class="card card-body">
                 Le missioni dell'azienda sono: creare un ecosistema di turismo responsabile, ridurre l'impatto sul pianeta, contribuire alla crescita e allo sviluppo sostenibile del territorio siciliano.
@@ -141,7 +157,7 @@
       </div>
   
       <!-- Card 3 -->
-      <div class="col-lg-3 col-md-3 col-12 col-md-4 mb-4">
+      <div class="col-lg-4 col-md-4 col-12 col-md-4 col-sm-mb-4 col-sm-mx-5 px-5">
         <div class="card" style="border-color:#7f2d55e9; border-width: 2px;">
           <img src="images/counter_img.png" class="card-img-top counter_js" alt="immagine di un counter" style="height: 18rem;">
           <div class="card-body">
@@ -150,11 +166,11 @@
             <a class="btn btn-outline" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
               Vedi altro
             </a>
-            <a href='https://github.com/FiammaFazio/JsCounter.git' target="_blank"><img src="images/github icon.svg" data-toggle="tooltip" title="Github" class="github_icon"></a>
-            <a href='https://js-counter-ff.netlify.app/' target="_blank"><img src="images/chevron-double-right.svg" class="apri_icon" data-toggle="tooltip-close" title="Apri"></a>
+            <a href='https://github.com/FiammaFazio/JsCounter.git' target="_blank"><img src="images/github icon.svg" data-toggle="tooltip" title="Github" class="github_icon mb-0 mx-4"></a>
+            <a href='https://js-counter-ff.netlify.app/' target="_blank"><img src="images/chevron-double-right.svg" class="apri_icon mb-0 mx-0" data-toggle="tooltip-close" title="Apri"></a>
             <div class="collapse" id="collapseExample3">
               <div class="card card-body">
-                Ho sviluppato un'applicazione JavaScript che permetta all'utente di aumentare e decrementare il valore del counter.
+                Questa e` la mia prima applicazione JavaScript,  permette all'utente di aumentare, decrementare o resettare il valore del counter. L'ho customizzata applicando poi del css.
               </div>
             </div>
           </div>
@@ -166,21 +182,36 @@
 
   <!-- Contact form -->
 
-  <section>
+  
+<section>
+  <h1 class="h2-CF px-5 mx-4">Compila il form per contattarmi!</h1>
+  <h2 class="p-form text-center justify-content-right col-lg-11 col-12 mx-5">Sono sempre aperta a nuove opportunità e sfide nel mondo della tecnologia e sono entusiasta di contribuire a progetti che possano fare la differenza. Se sei interessato a collaborare o semplicemente a connetterti, non esitare a contattarmi!</h2>
 
-  <h2 class=" h2-CF text-center">Compila il form per contattarmi!</h2>
-  <p class="p-form text-center">Sono sempre aperto a nuove opportunità e sfide nel mondo della tecnologia e sono entusiasta di contribuire a progetti che possano fare la differenza. Se sei interessato a collaborare o semplicemente a connetterti, non esitare a contattarmi!</p>
+  <form id="contact-form" method="dialog">
+    <div class="mb-4" style="margin: auto 30px;" id="contattami">
+      <label for="email" class="form-label" id="label">Email address:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+      <div class="invalid-feedback">Per favore, inserisci un'email valida.</div>
+    </div>
 
-  <div class="mb-4" style="margin: auto 70px;" id="contattami">
-    <label for="exampleFormControlInput1" class="form-label" id="label">Email address:</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <div class="mb-4" style="margin: auto 30px;">
+      <label for="message" class="form-label">Messaggio:</label>
+      <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+      <div class="invalid-feedback">Il campo messaggio non può essere vuoto.</div>
+    </div>
+
+    <button class="btn-CV rounded-pill" type="submit" style="margin-left: 35px; margin-top: 40px; width: 250px;">Submit</button>
+  </form>
+
+  <!-- Success message -->
+  <div id="success-message" style="display: none;" class="alert alert-success mt-3" role="alert">
+    Il tuo messaggio è stato inviato con successo!
   </div>
-  <div class="mb-4" style="margin: auto 70px;">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+  <!-- Error message -->
+  <div id="error-message" style="display: none;" class="alert alert-danger mt-3" role="alert">
+    Si è verificato un errore nell'invio del messaggio. Riprova più tardi.
   </div>
-  <button class="btn-CV rounded-pill" style="margin-left: 90px; margin-top: 10px;">Submit</button>
-</form>
 </section>
 
 <!-- Footer -->
@@ -190,6 +221,51 @@
   <a href='https://www.freecodecamp.org/'><img src="images/github icon.svg" class="github_icon_footer"></a>
           <a href='https://www.freecodecamp.org/'><img src="images/linkedin_icon.svg" class="apri_icon_footer"  ></a>
 </div>
+
+<script>
+  // Gestione della validazione
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita il comportamento predefinito del form (invio)
+
+    // Validazione email
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    
+    if (!emailInput.checkValidity()) {
+      emailInput.classList.add('is-invalid');
+    } else {
+      emailInput.classList.remove('is-invalid');
+    }
+
+    if (!messageInput.checkValidity()) {
+      messageInput.classList.add('is-invalid');
+    } else {
+      messageInput.classList.remove('is-invalid');
+    }
+
+    // Se tutti i campi sono validi, invia il messaggio
+    if (emailInput.checkValidity() && messageInput.checkValidity()) {
+      // Simuliamo il successo (sostituire con logica di invio reale)
+      document.getElementById('success-message').style.display = 'block';
+      setTimeout(() => {
+        document.getElementById('success-message').style.display = 'none';
+      }, 5000);
+
+      // Reset del modulo dopo il successo
+      form.reset();
+    } else {
+      // Mostra messaggio di errore se ci sono errori nei campi
+      document.getElementById('error-message').style.display = 'block';
+      setTimeout(() => {
+        document.getElementById('error-message').style.display = 'none';
+      }, 5000);
+    }
+  });
+</script>
+
+
+
  
  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"> </script>
